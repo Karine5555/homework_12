@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+/*for all big section*/
+.all{
+    min-width: 1380px;
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    border:3px solid #554d13;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+/*for header*/
+header{
+    height: 111px;
+    background-color:#D1C15B;
+
+    top:0;
+}
+.headerimg{
+    display: inline-block;
+    
+    
+}
+ul{
+position: absolute;
+right:10px;
+bottom: 10px;
+font-size: 25px;
+
+}
+nav,
+ul li{
+     display: inline-block;   
+     
+ }
+ ul li a{
+     margin-left: 10px;
+     color:#554d13;
+     text-decoration: none;
+ }
+ ul li a:hover{
+color:white;
+font-size: 27px;
+text-shadow:10px 5px rgb(124, 106, 106);
+ }
+/*for main*/
+ main{
+    background-color:#D1C15B;
+    height: 600px;
+    position: relative;
+    
+ }
+ 
+main div:nth-child(n){
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 135px;
+    height: 200px;
+    position: absolute;
+}
+main div:nth-child(n):hover{
+    z-index: 1;
+}
+main div:first-child{
+    background-image: url("/img/6.png");
+    
+}
+main div:nth-child(2){
+    background-image: url("/img/7.png");
+    top:40px;
+    left:40px;
+    
+    
+}
+main div:nth-child(3){
+    background-image: url("/img/8.png");
+    top:80px;
+    left:80px;
+    
+}
+main div:nth-child(4){
+    background-image: url("/img/Atlas_deck_9_of_spades.svg.png");
+    top:120px;
+    left:120px;
+}
+main div:nth-child(5){
+    background-image: url("/img/10.png");
+    top:160px;
+    left:160px;
+}
+main div:nth-child(6){
+    background-image: url("/img/valet.jpg");
+    top:200px;
+    left:200px;
+}
+main div:nth-child(7){
+    background-image: url("/img/dama1.jpg");
+    top:240px;
+    left:240px;
+}
+main div:nth-child(8){
+    background-image: url("/img/karol1.jpg");
+    top:280px;
+    left:280px;
+
+}
+main div:nth-child(9){
+    background-image: url("/img/tuz1.png");
+    top:320px;
+    left:320px;
+}
+
+footer{
+    height: 70px;
+    background-color: #D1C15B; 
+    color:#554d13;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    text-shadow: 5px 2px #645d23,   /*multiple shadow*/
+                    7px 4px #bbb68a,
+                    9px 6px #f5f3dc;
+
+}
+
+
+
+
+/* @media */
+
+@media screen and (max-width:1000px) {
+    main div:nth-child(2){
+        top: 0;
+        left:40px;
+        }
+    main div:nth-child(3){
+        top: 0;
+        left:80px;
+        
+    }
+    main div:nth-child(4){
+        top: 0;
+        left:120px;
+    }
+    main div:nth-child(5){
+        top: 0;
+        left:160px;
+    }
+    main div:nth-child(6){
+        top: 0;
+        left:200px;
+    }
+    main div:nth-child(7){
+        top: 0;
+        left:240px;
+    }
+    main div:nth-child(8){
+        top: 0;
+        left:280px;
+    
+    }
+    main div:nth-child(9){
+        top: 0;
+        left:320px;
+    }
+     
+    ul li a{
+        margin-left: 10px;
+        color:#f00b85;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    main div:nth-child(2){
+        top:40px;
+        left:0;
+        
+        
+    }
+    main div:nth-child(3){
+        top:80px;
+        left:0
+        
+    }
+    main div:nth-child(4){
+        top:120px;
+        left:0;
+    }
+    main div:nth-child(5){
+        top:160px;
+        left:0;
+    }
+    main div:nth-child(6){
+        top:200px;
+        left:0;
+    }
+    main div:nth-child(7){
+        top:240px;
+        left:0;
+    }
+    main div:nth-child(8){
+        top:280px;
+        left:0;
+    
+    }
+    main div:nth-child(9){
+        top:320px;
+        left:0;
+    }
+    
+}
